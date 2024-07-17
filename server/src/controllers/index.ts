@@ -1,3 +1,3 @@
 export * from './user';
-export * from './food';
+export * from './menu';
 export * from './category';

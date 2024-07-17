@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
-const foodSchema = new mongoose.Schema(
+const menuSchema = new mongoose.Schema(
 	{
 		name: {
 			type: String,
@@ -22,10 +22,14 @@ const foodSchema = new mongoose.Schema(
 			type: Boolean,
 			default: true,
 		},
+		restaurant: {
+			type: Schema.Types.ObjectId,
+			ref: 'restaurant',
+		},
 	},
 	{ timestamps: true },
 );
 
-const Food = mongoose.model('food', foodSchema);
+const Menu = mongoose.model('menu', menuSchema);
 
-export default Food;
+export default Menu;

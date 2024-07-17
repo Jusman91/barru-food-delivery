@@ -1,9 +1,9 @@
 import { RequestHandler } from 'express';
 import { isValidObjectId } from '../../lib/utils';
-import { Food } from '../../models';
+import { Menu } from '../../models';
 import { createError } from '../../middleware';
 
-export const getFood: RequestHandler = async (
+export const getMenu: RequestHandler = async (
 	req,
 	res,
 	next,
@@ -11,13 +11,13 @@ export const getFood: RequestHandler = async (
 	const { id } = req.params;
 	try {
 		if (!isValidObjectId(id))
-			return next(createError(404, 'Food not found'));
+			return next(createError(404, 'Menu not found'));
 
-		const food = await Food.findById(id);
+		const menu = await Menu.findById(id);
 
-		if (!food) return createError(404, 'Food not found');
+		if (!menu) return createError(404, 'Menu not found');
 
-		res.status(200).json(food);
+		res.status(200).json(menu);
 	} catch (error) {
 		next(error);
 	}

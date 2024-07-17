@@ -3,7 +3,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
 import usersRoutes from '../routes/users';
-import foodsRoutes from '../routes/foods';
+import menusRoutes from '../routes/menus';
 import categoriesRoutes from '../routes/categories';
 import { BASE_URL } from '../config';
 import { errorHandler } from '../middleware';
@@ -20,7 +20,7 @@ const createServer = () => {
 
 	// routes
 	app.use(`${BASE_URL}/users`, usersRoutes);
-	app.use(`${BASE_URL}/foods`, foodsRoutes);
+	app.use(`${BASE_URL}/menus`, menusRoutes);
 	app.use(`${BASE_URL}/categories`, categoriesRoutes);
 
 	// error handler should be the last middleware
