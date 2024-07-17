@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { DATABASE_URL } from './env';
 
 mongoose.set('strictQuery', false);
-const connectToDB = async () => {
+export const connectToDB = async () => {
 	try {
 		await mongoose.connect(`${DATABASE_URL}`);
 		console.log('Connect to the mongoDB successfully');
@@ -14,5 +14,3 @@ const connectToDB = async () => {
 		process.exit(1);
 	}
 };
-
-export default connectToDB;

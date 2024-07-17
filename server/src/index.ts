@@ -1,5 +1,5 @@
 import createServer from './app/server';
-import connectToDB from './config/db';
+import { connectToDB } from './config';
 
 const app = createServer();
 

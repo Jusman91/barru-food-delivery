@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
+import foodsRoutes from '../routes/foods';
+import { BASE_URL } from '../config';
+import { errorHandler } from '../middleware';
 
 const createServer = () => {
 	const app = express();
@@ -14,8 +17,10 @@ const createServer = () => {
 	app.use(cookieParser());
 
 	// routes
+	app.use(`${BASE_URL}/foods`, foodsRoutes);
 
 	// error handler should be the last middleware
+	app.use(errorHandler);
 
 	return app;
 };
