@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
+import usersRoutes from '../routes/users';
 import foodsRoutes from '../routes/foods';
 import categoriesRoutes from '../routes/categories';
 import { BASE_URL } from '../config';
@@ -18,6 +19,7 @@ const createServer = () => {
 	app.use(cookieParser());
 
 	// routes
+	app.use(`${BASE_URL}/users`, usersRoutes);
 	app.use(`${BASE_URL}/foods`, foodsRoutes);
 	app.use(`${BASE_URL}/categories`, categoriesRoutes);
 

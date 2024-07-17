@@ -7,3 +7,9 @@ export interface ICustomError extends Error {
 export type validationSchema = (
 	data: Request,
 ) => Promise<void | null>;
+
+export type UserValidationName =
+	| 'register'
+	| 'login'
+	| 'forgot-password'
+	| 'reset-password';
