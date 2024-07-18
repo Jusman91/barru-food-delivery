@@ -1,5 +1,13 @@
 import { keys } from '@/types';
 
+export function saveThemeToStorage(theme: string) {
+	return localStorage.setItem(keys.THEME_STORAGE, theme);
+}
+
+export function getThemeInStorage() {
+	return localStorage.getItem(keys.THEME_STORAGE);
+}
+
 export function saveAccessTokenToStorage(
 	accessToken: string,
 ) {

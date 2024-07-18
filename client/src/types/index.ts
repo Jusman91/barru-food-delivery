@@ -14,3 +14,14 @@ export enum keys {
 	CATEGORIES = 'categories',
 	PROFILE = 'profile',
 }
+
+// <context>
+export interface IErrorUseContext {
+	context: unknown;
+	message: string;
+}
+export interface IThemeContext {
+	myTheme: string;
+	toggleMyTheme: () => void;
+}
+// <context/>
