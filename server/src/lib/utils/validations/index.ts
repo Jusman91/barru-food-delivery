@@ -1,6 +1,7 @@
 import * as Yup from 'yup';
 import { customValidationReqBody } from './customValidationReqBody';
 import {
+	driverValidationSchema,
 	menuValidationSchema,
 	restaurantValidationSchema,
 	userValidationSchema,
@@ -32,5 +33,6 @@ export const validationBody = {
 	restaurant: customValidationReqBody(
 		restaurantValidationSchema,
 	),
+	driver: customValidationReqBody(driverValidationSchema),
 	menu: customValidationReqBody(menuValidationSchema),
 };

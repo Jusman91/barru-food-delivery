@@ -12,6 +12,19 @@ const userSchema = new mongoose.Schema(
 			required: true,
 			unique: true,
 		},
+		city: {
+			type: String,
+			required: true,
+		},
+		address: {
+			type: String,
+			required: true,
+		},
+		phone: {
+			type: String,
+			required: true,
+			unique: true,
+		},
 		password: {
 			type: String,
 			required: true,
@@ -20,17 +33,12 @@ const userSchema = new mongoose.Schema(
 			type: String,
 			default: '',
 		},
-		phone: {
-			type: String,
-			required: true,
-			unique: true,
-		},
 		role: {
 			type: String,
 			enum: [
 				'customer',
 				'restaurant_owner',
-				'delivery_person',
+				'driver',
 				'admin',
 			],
 			default: 'customer',

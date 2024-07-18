@@ -24,6 +24,11 @@ export const userValidationSchema = (
 						/^\+(\d{1,4}[- ]?)?\d{10,15}$/,
 						'Invalid contact format',
 					), // star with + and min 10, max 15 e.g. +6212345678988
+				city: Yup.string().required('City is required'),
+				address: Yup.string()
+					.required('Address is required')
+					.min(3, 'Address must be at least 3 characters')
+					.max(200, 'Address cannot exceed 200 characters'),
 			}));
 		case 'login':
 			return (schema = Yup.object().shape({

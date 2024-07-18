@@ -1,9 +1,23 @@
 import mongoose, { Schema } from 'mongoose';
 
-const restaurantSchema = new mongoose.Schema(
+const driverSchema = new mongoose.Schema(
 	{
-		name: {
+		username: {
 			type: String,
+			required: true,
+			unique: true,
+		},
+		email: {
+			type: String,
+			required: true,
+			unique: true,
+		},
+		profilePic: {
+			type: String,
+			required: true,
+		},
+		age: {
+			type: Number,
 			required: true,
 		},
 		city: {
@@ -19,25 +33,19 @@ const restaurantSchema = new mongoose.Schema(
 			required: true,
 			unique: true,
 		},
-		thumbnail: {
+		vehicle: {
 			type: String,
 			required: true,
 		},
-		owner_id: { type: Schema.Types.ObjectId, ref: 'user' },
-		menus_id: [
-			{ type: Schema.Types.ObjectId, ref: 'menu' },
-		],
 		status: {
 			type: Number,
 			default: 1, // 1 = active, 0 = inactive
 		},
+		driver_id: { type: Schema.Types.ObjectId, ref: 'user' },
 	},
 	{ timestamps: true },
 );
 
-const Restaurant = mongoose.model(
-	'restaurant',
-	restaurantSchema,
-);
+const Driver = mongoose.model('driver', driverSchema);
 
-export default Restaurant;
+export default Driver;
