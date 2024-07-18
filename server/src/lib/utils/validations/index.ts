@@ -2,6 +2,7 @@ import * as Yup from 'yup';
 import { customValidationReqBody } from './customValidationReqBody';
 import {
 	menuValidationSchema,
+	restaurantValidationSchema,
 	userValidationSchema,
 } from './schema';
 
@@ -28,5 +29,8 @@ export const validationBody = {
 			) as unknown as Yup.ObjectSchema<any>,
 		),
 	},
+	restaurant: customValidationReqBody(
+		restaurantValidationSchema,
+	),
 	menu: customValidationReqBody(menuValidationSchema),
 };

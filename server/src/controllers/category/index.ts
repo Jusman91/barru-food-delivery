@@ -1,1 +1,1 @@
-export * from './categoryFood';
+export * from './categoryMenu';

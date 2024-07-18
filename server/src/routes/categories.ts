@@ -1,8 +1,8 @@
 import express from 'express';
-import { getCategoryFood } from '../controllers';
+import { getCategoryMenu } from '../controllers';
 
 const router = express.Router();
 
-router.get('/food', getCategoryFood);
+router.get('/menu', getCategoryMenu);
 
 export default router;

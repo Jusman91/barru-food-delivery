@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const categoryFoodSchema = new mongoose.Schema({
+const categoryMenuSchema = new mongoose.Schema({
 	name: String,
 });
 
@@ -22,19 +22,19 @@ const dataCategories = [
 	{ name: 'tumis' },
 ];
 
-const CategoryFood = mongoose.model(
-	'category_food',
-	categoryFoodSchema,
+const CategoryMenu = mongoose.model(
+	'category_menu',
+	categoryMenuSchema,
 );
 
-// const saveCategoryFood = async (data: any) => {
+// const saveCategoryMenu = async (data: any) => {
 // 	try {
 // 		for (const category of data) {
-// 			const existingCategory = await CategoryFood.findOne({
+// 			const existingCategory = await CategoryMenu.findOne({
 // 				name: category.name,
 // 			});
 // 			if (existingCategory) {
-// 				await CategoryFood.updateMany(
+// 				await CategoryMenu.updateMany(
 // 					{ name: category.name },
 // 					category,
 // 				);
@@ -42,7 +42,7 @@ const CategoryFood = mongoose.model(
 // 					`Data category dengan nama ${category.name} berhasil diperbarui`,
 // 				);
 // 			} else {
-// 				await CategoryFood.create(category);
+// 				await CategoryMenu.create(category);
 // 				console.log(
 // 					`Data category dengan nama ${category.name} berhasil disimpan`,
 // 				);
@@ -56,6 +56,6 @@ const CategoryFood = mongoose.model(
 // 	}
 // };
 
-// saveCategoryFood(dataCategories);
+// saveCategoryMenu(dataCategories);
 
-export default CategoryFood;
+export default CategoryMenu;

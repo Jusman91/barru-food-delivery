@@ -1,13 +1,13 @@
 import { RequestHandler } from 'express';
-import { CategoryFood } from '../../models';
+import { CategoryMenu } from '../../models';
 
-export const getCategoryFood: RequestHandler = async (
+export const getCategoryMenu: RequestHandler = async (
 	req,
 	res,
 	next,
 ) => {
 	try {
-		const categories = await CategoryFood.find();
+		const categories = await CategoryMenu.find();
 		res.status(200).json(categories);
 	} catch (error) {
 		next(error);

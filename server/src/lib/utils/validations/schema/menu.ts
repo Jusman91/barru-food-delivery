@@ -11,5 +11,4 @@ export const menuValidationSchema = Yup.object().shape({
 		.required('Description is required')
 		.max(300, 'Description cannot exceed 200 characters'),
 	thumbnail: Yup.string().required('Thumbnail is required'),
-	inStock: Yup.boolean(),
 });

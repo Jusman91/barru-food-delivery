@@ -1,4 +1,3 @@
-import mongoose from 'mongoose';
 import { RequestHandler } from 'express';
 import {
 	isValidObjectId,

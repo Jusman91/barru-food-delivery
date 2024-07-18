@@ -18,9 +18,9 @@ const menuSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		inStock: {
-			type: Boolean,
-			default: true,
+		status: {
+			type: Number,
+			default: 1, // 1 = available, 0 = not available
 		},
 		restaurant: {
 			type: Schema.Types.ObjectId,
