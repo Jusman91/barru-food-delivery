@@ -9,7 +9,6 @@
     "moduleResolution": "Node",
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "."
   },
   "include": ["src/**/*.ts"],
 }
