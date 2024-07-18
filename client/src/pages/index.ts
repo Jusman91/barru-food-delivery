@@ -1,0 +1,17 @@
+export { default as App } from './App';
+export { default as Register } from './auth/Register';
+export { default as Login } from './auth/Login';
+export { default as ForgotPassword } from './auth/ForgotPassword';
+export { default as ResetPassword } from './auth/ResetPassword';
+export { default as TokenExpired } from './auth/TokenExpired';
+export { default as Home } from './home';
+export { default as About } from './about';
+export { default as Contact } from './contact';
+export { default as DetailUser } from './user/DetailUser';
+export { default as Restaurants } from './restaurant/Restaurants';
+export { default as DetailRestaurant } from './restaurant/DetailRestaurant';
+export { default as Menus } from './menu/Menus';
+export { default as DetailMenu } from './menu/DetailMenu';
+export { default as Drivers } from './driver/Drivers';
+export { default as DetailDriver } from './driver/DetailDriver';
+export { default as NotFound } from './404';

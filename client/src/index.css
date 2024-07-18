@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--bg-base: 0 0% 100%;
+		--color-base: 0 0% 0%;
+		--color-primary-0: 204 60% 90%;
+		--color-primary-10: 205 57% 82%;
+		--color-primary-20: 202 57% 68%;
+		--color-primary-30: 202 61% 58%;
+		--color-primary-40: 202 56% 50%;
+	}
+	:root[data-theme='dark'] {
+		--bg-base: 0 0% 0%;
+		--color-base: 0 0% 100%;
+	}
+
+	* {
+		@apply box-border list-none p-0 m-0 scroll-smooth;
+	}
+	body {
+		@apply container max-w-[1440px] mx-auto;
+	}
+	.text-h1 {
+		@apply text-clamp-h1 text-color-base font-semibold leading-tight;
+	}
+	.text-h2 {
+		@apply text-clamp-h2 text-color-base font-semibold leading-tight;
+	}
+	.text-h3 {
+		@apply text-clamp-h3 text-color-base font-semibold leading-tight;
+	}
+	.text-h4 {
+		@apply text-clamp-h4 text-color-base font-semibold leading-tight;
+	}
+	.text-h5 {
+		@apply text-clamp-h5 text-color-base font-semibold leading-tight;
+	}
+	.text-h6 {
+		@apply text-clamp-h6 text-color-base font-semibold leading-7;
+	}
+}
