@@ -1,7 +1,7 @@
-import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const RestaurantsLayout = () => {
-	return <div>RestaurantsLayout</div>;
+	return <Outlet />;
 };
 
 export default RestaurantsLayout;

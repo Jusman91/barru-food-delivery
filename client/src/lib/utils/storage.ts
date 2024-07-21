@@ -25,6 +25,19 @@ export function getAccessTokenInStorage() {
 	return accessToken ? JSON.parse(accessToken) : '{}';
 }
 
+export function saveSelectedKeysInStorage(key: string) {
+	sessionStorage.setItem(
+		keys.SELECTED_KEYS,
+		JSON.stringify([key]),
+	);
+}
+
+export function getSelectedKeysInStorage() {
+	const key =
+		sessionStorage.getItem(keys.SELECTED_KEYS) || '["/"]';
+	return key ? JSON.parse(key) : '["/"]';
+}
+
 export function clearStorage() {
 	localStorage.clear();
 }

@@ -1,7 +1,7 @@
-import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const DriversLayouts = () => {
-	return <div>DriversLayouts</div>;
+	return <Outlet />;
 };
 
 export default DriversLayouts;

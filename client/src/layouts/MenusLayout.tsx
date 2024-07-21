@@ -1,7 +1,7 @@
-import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const MenusLayout = () => {
-	return <div>MenusLayout</div>;
+	return <Outlet />;
 };
 
 export default MenusLayout;

@@ -42,3 +42,9 @@
 		@apply text-clamp-h6 text-color-base font-semibold leading-7;
 	}
 }
+
+.ant-menu-overflow .ant-menu-item {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
