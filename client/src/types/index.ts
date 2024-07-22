@@ -33,6 +33,21 @@ export interface IconProps {
 	className?: string;
 	children: ReactNode;
 }
+export interface IImageProps {
+	src: string;
+	alt?: string;
+	className?: string;
+}
+export interface ITypographyProps {
+	type?: 'heading' | 'paragraph';
+	text: string;
+	className?: string;
+}
+export interface ISkeleton {
+	width: number | string;
+	height: number | string;
+	borderRadius?: string;
+}
 
 // <navigation>
 export interface IListNavObj {

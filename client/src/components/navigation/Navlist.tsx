@@ -18,7 +18,7 @@ const Navlist = () => {
 	};
 	return (
 		<Menu
-			className='py-8 md:py-0'
+			className='bg-inherit w-full font-merienda font-bold py-8 md:py-0'
 			mode={md ? 'horizontal' : 'vertical'}
 			items={items}
 			selectedKeys={selectedKeys}

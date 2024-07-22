@@ -10,7 +10,7 @@ const ImgSvg = ({ svg, alt, className }: IImgSvgProps) => {
 		<img
 			src={svg}
 			alt={alt}
-			className={cn('w-4 h-4 ', className)}
+			className={cn('w-40 h-40 ', className)}
 		/>
 	);
 };

@@ -7,7 +7,12 @@ export default {
 	},
 	theme: {
 		extend: {
+			fontFamily: {
+				merienda: ['Merienda', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif'],
+			},
 			fontSize: {
+				'clamp-7xl': 'clamp(34px, calc(5px + 5vw), 72px)',
 				'clamp-h1':
 					'clamp(34px, calc(2.8px + 3.2vw), 54px)',
 				'clamp-h2': 'clamp(30px, calc(2.8px + 3vw), 46px)',

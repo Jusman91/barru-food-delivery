@@ -1,20 +1,16 @@
-import { Skeleton } from 'antd';
 import { lazy, Suspense } from 'react';
+import Skeleton from './Skeleton';
 const Logo = lazy(() => import('../elements/Logo'));
 
 const LogoWithLazy = () => {
 	return (
 		<Suspense
 			fallback={
-				<Skeleton.Node
-					active
-					style={{
-						width: 56,
-						height: 56,
-						borderRadius: '100%',
-					}}>
-					{' '}
-				</Skeleton.Node>
+				<Skeleton
+					width={56}
+					height={56}
+					borderRadius='100%'
+				/>
 			}>
 			<Logo />
 		</Suspense>
