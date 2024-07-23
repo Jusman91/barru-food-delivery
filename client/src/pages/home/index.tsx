@@ -1,9 +1,11 @@
 import { HeroHome } from '@/components';
+import ServiceBanner from '@/components/ServiceBanner';
 
 const Home = () => {
 	return (
-		<section>
+		<section className=''>
 			<HeroHome />
+			<ServiceBanner />
 		</section>
 	);
 };

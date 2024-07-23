@@ -1,4 +1,4 @@
-import { Key, ReactNode } from 'react';
+import { ImgHTMLAttributes, Key, ReactNode } from 'react';
 
 export enum keys {
 	THEME_STORAGE = 'theme_storage',
@@ -33,7 +33,8 @@ export interface IconProps {
 	className?: string;
 	children: ReactNode;
 }
-export interface IImageProps {
+export interface IImageProps
+	extends ImgHTMLAttributes<HTMLImageElement> {
 	src: string;
 	alt?: string;
 	className?: string;
@@ -48,14 +49,29 @@ export interface ISkeleton {
 	height: number | string;
 	borderRadius?: string;
 }
+export interface ICardService {
+	src: string;
+	alt: string;
+	title: string;
+	subTitle: string;
+}
 
-// <navigation>
+// <static>
+export interface IImgHeroHomeObj {
+	src: string;
+	alt?: string;
+	className?: string;
+}
 export interface IListNavObj {
 	key: Key;
 	label: ReactNode;
 	icon?: ReactNode;
 	children?: IListNavObj[];
 }
+export interface ICardServiceObj extends ICardService {}
+// <static/>
+
+// <navigation>
 export interface IlistNav extends IListNavObj {}
 export interface IBtnMobile {
 	icon: ReactNode;
