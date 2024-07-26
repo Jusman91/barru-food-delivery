@@ -1,5 +1,5 @@
 import { Icon } from '@/components';
-import { IListNavObj } from '@/types';
+import { IlistItem } from '@/types';
 import { BiFoodMenu } from 'react-icons/bi';
 import { CiDeliveryTruck } from 'react-icons/ci';
 import { IoMdInformationCircleOutline } from 'react-icons/io';
@@ -8,8 +8,7 @@ import {
 	IoHomeOutline,
 } from 'react-icons/io5';
 import { MdOutlineContacts } from 'react-icons/md';
-
-export const listNavObj: IListNavObj[] = [
+export const listNavObj: IlistItem[] = [
 	{
 		key: '/',
 		label: 'Home',

@@ -1,3 +1,5 @@
+export * from './img/category';
+export * from './img/food';
 export { default as LOGO } from './img/logo-tasi.png';
 export { default as HEROHOME } from './img/seafood.png';
 export { default as CARD_CONTACT } from './img/card_contact.svg';

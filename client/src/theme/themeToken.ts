@@ -12,6 +12,15 @@ export const themeToken = (myTheme: string) => {
 				myTheme === 'dark' ? myColors.dark : undefined,
 			colorPrimary: myColors.primary[40],
 		},
+		components: {
+			Menu: {
+				itemSelectedBg: myColors.primary[30],
+				itemSelectedColor: myColors.white,
+				itemHoverBg: myColors.primary[10],
+				itemHeight: 45,
+				itemBorderRadius: 30,
+			},
+		},
 		algorithm:
 			myTheme === 'dark' ? darkAlgorithm : defaultAlgorithm,
 	};

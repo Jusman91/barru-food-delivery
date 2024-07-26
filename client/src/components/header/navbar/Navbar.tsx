@@ -1,14 +1,10 @@
 import { cn } from '@/lib/utils';
 import { useToggle } from '@/hooks';
-import {
-	BtnLogin,
-	BtnMobile,
-	Icon,
-	Logo,
-} from '../elements';
-import { IoCloseCircleOutline } from 'react-icons/io5';
-import { RiMenuFold2Fill } from 'react-icons/ri';
+import { LoginBtn, Logo } from '@/components/elements';
 import Navlist from './Navlist';
+import CloseNavlistBtn from './CloseNavlistBtn';
+import OpenNavlistBtn from './OpenNavlistBtn';
+import LoginMobileBtn from './LoginMobileBtn';
 
 const Navbar = () => {
 	const [open, setOpen] = useToggle(false);
@@ -22,33 +18,14 @@ const Navbar = () => {
 					open ? 'translate-x-[0%]' : '-translate-x-full',
 				)}>
 				<Navlist />
-				<BtnMobile
-					className='absolute z-50 top-1 right-4'
-					icon={
-						<Icon>
-							<IoCloseCircleOutline className='text-2xl' />
-						</Icon>
-					}
-					onClick={() => setOpen(false)}
-				/>
-				<BtnLogin
-					className='block md:hidden w-full h-10'
-					onClick={() => {}}
-				/>
+				<CloseNavlistBtn onClick={() => setOpen(false)} />
+				<LoginMobileBtn onClick={() => {}} />
 			</div>
-
-			<BtnLogin
+			<LoginBtn
 				className='hidden md:block rounded-3xl'
 				onClick={() => {}}
 			/>
-			<BtnMobile
-				icon={
-					<Icon>
-						<RiMenuFold2Fill className='text-2xl' />
-					</Icon>
-				}
-				onClick={() => setOpen(true)}
-			/>
+			<OpenNavlistBtn onClick={() => setOpen(true)} />
 		</section>
 	);
 };

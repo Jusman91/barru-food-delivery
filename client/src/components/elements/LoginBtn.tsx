@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils';
 import Button from './Button';
-import { IBtnLogin } from '@/types';
+import { ILoginBtn } from '@/types';
 
-const BtnLogin = ({ onClick, className }: IBtnLogin) => {
+const LoginBtn = ({ onClick, className }: ILoginBtn) => {
 	return (
 		<Button
 			onClick={onClick}
@@ -13,4 +13,4 @@ const BtnLogin = ({ onClick, className }: IBtnLogin) => {
 	);
 };
 
-export default BtnLogin;
+export default LoginBtn;

@@ -1,0 +1,9 @@
+export { default as CATEGORY_FISH } from './category_fish.png';
+export { default as CATEGORY_SHRIMP } from './category_shrimp.png';
+export { default as CATEGORY_LOBSTER } from './category_lobster.png';
+export { default as CATEGORY_CUTTLEFISH } from './categorty_cuttlefish.png';
+export { default as CATEGORY_OCTOPUS } from './category_octopus.png';
+export { default as CATEGORY_SQUID } from './category_squid.png';
+export { default as CATEGORY_CRAB } from './category_crab.png';
+export { default as CATEGORY_OYSTER } from './category_oyster.png';
+export { default as CATEGORY_SEAGRAPES } from './category_seagrapes.png';

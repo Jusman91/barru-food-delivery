@@ -1,5 +1,7 @@
-import { ImgHTMLAttributes, Key, ReactNode } from 'react';
-
+import { ImgHTMLAttributes, ReactNode } from 'react';
+export * from './user';
+export * from './menu';
+export * from './restaurant';
 export enum keys {
 	THEME_STORAGE = 'theme_storage',
 	ACCESSTOKEN_STORAGE = 'accessToken_storage',
@@ -18,7 +20,6 @@ export enum keys {
 	SELECTED_KEYS = 'selected_keys',
 }
 
-// <context>
 export interface IErrorUseContext {
 	context: unknown;
 	message: string;
@@ -27,8 +28,6 @@ export interface IThemeContext {
 	myTheme: string;
 	toggleMyTheme: () => void;
 }
-// <context/>
-
 export interface IconProps {
 	className?: string;
 	children: ReactNode;
@@ -36,50 +35,43 @@ export interface IconProps {
 export interface IImageProps
 	extends ImgHTMLAttributes<HTMLImageElement> {
 	src: string;
-	alt?: string;
 	className?: string;
 }
-export interface ITypographyProps {
-	type?: 'heading' | 'paragraph';
-	text: string;
-	className?: string;
-}
-export interface ISkeleton {
+export interface ISkeletonProps {
 	width: number | string;
 	height: number | string;
 	borderRadius?: string;
 }
-export interface ICardService {
+export interface ICardServiceProps {
 	src: string;
 	alt: string;
 	title: string;
 	subTitle: string;
 }
-
-// <static>
+export interface IHeaderContent {
+	title: string;
+	subTitle: string;
+	rootClassName?: string;
+}
+export interface IlistItem {
+	key: string;
+	label: string;
+	icon?: ReactNode;
+	children?: ReactNode;
+}
 export interface IImgHeroHomeObj {
 	src: string;
 	alt?: string;
 	className?: string;
 }
-export interface IListNavObj {
-	key: Key;
-	label: ReactNode;
-	icon?: ReactNode;
-	children?: IListNavObj[];
+export interface ICardServiceObj
+	extends ICardServiceProps {}
+export interface IOpenNavlistBtnProps {
+	onClick: () => void;
 }
-export interface ICardServiceObj extends ICardService {}
-// <static/>
-
-// <navigation>
-export interface IlistNav extends IListNavObj {}
-export interface IBtnMobile {
-	icon: ReactNode;
+export interface ICloseNavlistBtnProps
+	extends IOpenNavlistBtnProps {}
+export interface ILoginBtn {
 	onClick: () => void;
 	className?: string;
 }
-export interface IBtnLogin {
-	onClick: () => void;
-	className?: string;
-}
-// <navigation/>

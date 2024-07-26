@@ -1,12 +1,20 @@
+import { cn } from '@/lib/utils';
 import { IImageProps } from '@/types';
 
-const Image = ({ src, alt, className }: IImageProps) => {
+const Image = ({
+	src,
+	className,
+	...props
+}: IImageProps) => {
 	return (
 		<img
+			{...props}
 			loading='lazy'
 			src={src}
-			alt={alt}
-			className={className}
+			className={cn(
+				'w-full h-full object-cover',
+				className,
+			)}
 		/>
 	);
 };

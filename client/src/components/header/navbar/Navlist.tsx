@@ -1,18 +1,17 @@
 import { useBreakpoints } from '@/hooks';
+import { getMenuModeAntd } from '@/lib/utils';
 import { getListNavItems } from '@/lib/utils/getListNavItems';
 import {
 	getSelectedKeysInStorage,
 	saveSelectedKeysInStorage,
 } from '@/lib/utils/storage';
 import { Menu, MenuProps } from 'antd';
-import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Navlist = () => {
 	const navigate = useNavigate();
 	const { md } = useBreakpoints();
-	const [mode, setMode] =
-		useState<MenuProps['mode']>('horizontal');
+	const mode = getMenuModeAntd(md);
 	const { items } = getListNavItems();
 	const selectedKeys = getSelectedKeysInStorage();
 	const handleNavigate: MenuProps['onClick'] = (e) => {
@@ -20,10 +19,6 @@ const Navlist = () => {
 		navigate(e.key);
 		saveSelectedKeysInStorage(e.key);
 	};
-
-	useEffect(() => {
-		setMode(md ? 'horizontal' : 'vertical');
-	}, [md]);
 
 	return (
 		<Menu

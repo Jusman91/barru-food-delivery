@@ -1,11 +1,11 @@
-import { ISkeleton } from '@/types';
+import { ISkeletonProps } from '@/types';
 import { Skeleton as AntdSkeleton } from 'antd';
 
 const Skeleton = ({
 	width,
 	height,
 	borderRadius,
-}: ISkeleton) => {
+}: ISkeletonProps) => {
 	return (
 		<AntdSkeleton.Node
 			active

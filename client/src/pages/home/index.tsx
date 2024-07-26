@@ -1,11 +1,15 @@
-import { HeroHome } from '@/components';
-import ServiceBanner from '@/components/ServiceBanner';
+import {
+	HeroHome,
+	MenuInHome,
+	ServiceBanner,
+} from '@/components';
 
 const Home = () => {
 	return (
-		<section className=''>
+		<section>
 			<HeroHome />
 			<ServiceBanner />
+			<MenuInHome />
 		</section>
 	);
 };
