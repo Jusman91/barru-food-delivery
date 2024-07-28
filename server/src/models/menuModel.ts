@@ -14,6 +14,10 @@ const menuSchema = new mongoose.Schema(
 			type: Number,
 			required: true,
 		},
+		category: {
+			type: String,
+			required: true,
+		},
 		thumbnail: {
 			type: String,
 			required: true,
@@ -22,7 +26,7 @@ const menuSchema = new mongoose.Schema(
 			type: Number,
 			default: 1, // 1 = available, 0 = not available
 		},
-		restaurant: {
+		restaurant_id: {
 			type: Schema.Types.ObjectId,
 			ref: 'restaurant',
 		},

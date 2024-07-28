@@ -7,19 +7,13 @@ const categoryMenuSchema = new mongoose.Schema({
 const dataCategories = [
 	{ name: 'ikan' },
 	{ name: 'udang' },
-	{ name: 'cumi-cumi' },
+	{ name: 'cumi' },
 	{ name: 'kepiting' },
 	{ name: 'lobster' },
 	{ name: 'sotong' },
 	{ name: 'gurita' },
 	{ name: 'kerang' },
-	{ name: 'rumput laut' },
-	{ name: 'bakar' },
-	{ name: 'rebus' },
-	{ name: 'kukus' },
-	{ name: 'panggang' },
-	{ name: 'asap' },
-	{ name: 'tumis' },
+	{ name: 'anggur_laut' },
 ];
 
 const CategoryMenu = mongoose.model(
