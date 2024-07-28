@@ -1,10 +1,10 @@
-import { ButtonIcon } from '@/components/fragments';
 import { IInfoBtnProps } from '@/types';
 import { IoInformationCircleSharp } from 'react-icons/io5';
+import { Button } from '../elements';
 
 const InfoBtn = ({ onClick }: IInfoBtnProps) => {
 	return (
-		<ButtonIcon
+		<Button
 			type='primary'
 			shape='circle'
 			className=' w-8 h-8 absolute top-3 right-3'

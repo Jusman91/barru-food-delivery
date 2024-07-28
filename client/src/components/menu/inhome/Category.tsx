@@ -8,7 +8,7 @@ const Category = () => {
 	};
 	return (
 		<Menu
-			className='w-full text-md font-merienda font-semibold flex flex-col gap-12'
+			className='w-full !bg-inherit text-md font-merienda font-semibold flex flex-col gap-12'
 			mode='vertical'
 			items={items}
 			selectedKeys={['ikan']}

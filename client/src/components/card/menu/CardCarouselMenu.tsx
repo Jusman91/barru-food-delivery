@@ -1,12 +1,11 @@
-import { Image } from '../../elements';
-import { ICardMenuProps } from '@/types';
-import CardDetailMenu from './CardDetailMenu';
-import OrderBtn from './OrderBtn';
-import InfoBtn from './InfoBtn';
 import { useToggle } from '@/hooks';
 import { cn } from '@/lib/utils';
+import { ICardCarouselMenuProps } from '@/types';
+import CardDetailMenu from './CardDetailMenu';
+import { InfoBtn, OrderBtn } from '@/components/fragments';
+import { Image } from '@/components/elements';
 
-const CardMenu = ({
+const CardCarouselMenu = ({
 	name,
 	price,
 	status,
@@ -14,13 +13,13 @@ const CardMenu = ({
 	description,
 	thumbnail,
 	restaurant_id,
-}: ICardMenuProps) => {
+}: ICardCarouselMenuProps) => {
 	const [show, toggleShow] = useToggle();
 	const checkStatus =
 		status === 1 ? 'tersedia' : 'tidak tersedia';
 
 	return (
-		<div className='card-menu relative h-[400px] mx-2 p-1 rounded-3xl shadow-glass-sm opacity-100 md:opacity-70'>
+		<div className='card-menu relative h-72 md:h-[400px] mx-2 p-1 rounded-3xl shadow-glass-sm opacity-100 md:opacity-70'>
 			<Image
 				src={thumbnail}
 				alt={name}
@@ -56,4 +55,4 @@ const CardMenu = ({
 	);
 };
 
-export default CardMenu;
+export default CardCarouselMenu;

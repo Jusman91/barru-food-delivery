@@ -19,7 +19,11 @@ export const themeToken = (myTheme: string) => {
 				itemHoverBg: myColors.primary[10],
 				itemHeight: 45,
 				itemBorderRadius: 30,
+				// colorBgContainer: undefined,
 			},
+			// Layout: {
+			// 	siderBg: undefined,
+			// },
 		},
 		algorithm:
 			myTheme === 'dark' ? darkAlgorithm : defaultAlgorithm,

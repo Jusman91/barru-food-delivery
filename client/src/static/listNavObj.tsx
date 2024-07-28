@@ -1,4 +1,3 @@
-import { Icon } from '@/components';
 import { IlistItem } from '@/types';
 import { BiFoodMenu } from 'react-icons/bi';
 import { CiDeliveryTruck } from 'react-icons/ci';
@@ -12,55 +11,33 @@ export const listNavObj: IlistItem[] = [
 	{
 		key: '/',
 		label: 'Home',
-		icon: (
-			<Icon>
-				<IoHomeOutline className='text-base	' />
-			</Icon>
-		),
+		icon: <IoHomeOutline className='text-base	' />,
 	},
 	{
 		key: '/menus',
 		label: 'Menus',
-		icon: (
-			<Icon>
-				<BiFoodMenu className='text-base	' />
-			</Icon>
-		),
+		icon: <BiFoodMenu className='text-base	' />,
 	},
 	{
 		key: '/restaurants',
 		label: 'Restaurants',
-		icon: (
-			<Icon>
-				<IoRestaurantOutline className='text-base	' />
-			</Icon>
-		),
+		icon: <IoRestaurantOutline className='text-base	' />,
 	},
 	{
 		key: '/drivers',
 		label: 'Drivers',
-		icon: (
-			<Icon>
-				<CiDeliveryTruck className='text-base	' />
-			</Icon>
-		),
+		icon: <CiDeliveryTruck className='text-base	' />,
 	},
 	{
 		key: '/about',
 		label: 'About',
 		icon: (
-			<Icon>
-				<IoMdInformationCircleOutline className='text-base	' />
-			</Icon>
+			<IoMdInformationCircleOutline className='text-base	' />
 		),
 	},
 	{
 		key: '/contact',
 		label: 'Contact',
-		icon: (
-			<Icon>
-				<MdOutlineContacts className='text-base	' />
-			</Icon>
-		),
+		icon: <MdOutlineContacts className='text-base	' />,
 	},
 ];

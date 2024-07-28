@@ -1,11 +1,8 @@
 export * from './img/category';
 export * from './img/food';
 export { default as LOGO } from './img/logo-tasi.png';
-export { default as HEROHOME } from './img/seafood.png';
-export { default as CARD_CONTACT } from './img/card_contact.svg';
-export { default as CARD_MENU } from './img/card_menu.svg';
-export { default as CLOCK } from './img/clock.svg';
-export { default as FIRE } from './img/noto_fire.svg';
+export { default as HEROHOME1 } from './img/hero_home.png';
 export { default as DELIVERY } from './img/delivery.svg';
 export { default as ORDER } from './img/order.svg';
 export { default as QUALIY } from './img/quality.svg';
+export { default as CHEF } from './img/chef.png';

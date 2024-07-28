@@ -22,7 +22,7 @@ const Navlist = () => {
 
 	return (
 		<Menu
-			className='bg-inherit w-full font-merienda font-bold py-8 md:py-0'
+			className='!bg-inherit font-merienda font-bold py-8 md:py-0'
 			mode={mode}
 			items={items}
 			selectedKeys={selectedKeys}

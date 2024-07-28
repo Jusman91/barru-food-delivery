@@ -1,4 +1,4 @@
-import { CardMenu } from '@/components/card';
+import { CardCarouselMenu } from '@/components/card';
 import { mockDataMenus } from '@/static/mockData';
 import { Carousel as CarouselAntd } from 'antd';
 import { CarouselRef } from 'antd/es/carousel';
@@ -28,26 +28,9 @@ const Carousel = forwardRef<CarouselRef>((_, ref) => {
 						draggable: true,
 					},
 				},
-				// {
-				// 	breakpoint: 600,
-				// 	settings: {
-				// 		infinite: false,
-				// 		centerMode: false,
-				// 		initialSlide: 2,
-				// 	},
-				// },
-				// {
-				// 	breakpoint: 280,
-				// 	settings: {
-				// 		infinite: false,
-				// 		centerMode: false,
-				// 		initialSlide: 2,
-				// 		centerPadding: undefined,
-				// 	},
-				// },
 			]}>
 			{mockDataMenus.slice(0, 5).map((item, idx) => (
-				<CardMenu
+				<CardCarouselMenu
 					key={idx}
 					name={item.name}
 					description={item.description}

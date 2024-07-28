@@ -1,4 +1,4 @@
-import { Button, Icon } from '@/components/elements';
+import { Button } from '@/components/elements';
 import { IOrderBtnProps } from '@/types';
 import { BiSolidShoppingBags } from 'react-icons/bi';
 
@@ -6,12 +6,11 @@ const OrderBtn = ({ onClick }: IOrderBtnProps) => {
 	return (
 		<Button
 			type='primary'
-			className='rounded-lg'
+			className='rounded-2xl'
+			icon={<BiSolidShoppingBags />}
+			iconPosition='end'
 			onClick={onClick}>
 			Pesan
-			<Icon>
-				<BiSolidShoppingBags />
-			</Icon>
 		</Button>
 	);
 };

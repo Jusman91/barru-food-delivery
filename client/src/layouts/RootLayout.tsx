@@ -9,8 +9,8 @@ const RootLayout = () => {
 	const { rootTheme } = themeToken(myTheme);
 	return (
 		<ConfigProvider theme={rootTheme}>
-			<main className='relative px-8'>
-				<Layout className='bg-bkg-base font-poppins'>
+			<main className='relative'>
+				<Layout className='min-h-screen bg-gradient-to-br from-white to-primary-0/70 font-poppins'>
 					<Navbar />
 					<Outlet />
 					<Footer />

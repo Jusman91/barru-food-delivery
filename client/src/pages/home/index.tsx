@@ -1,4 +1,5 @@
 import {
+	CustomerSay,
 	HeroHome,
 	MenuInHome,
 	ServiceBanner,
@@ -10,6 +11,7 @@ const Home = () => {
 			<HeroHome />
 			<ServiceBanner />
 			<MenuInHome />
+			<CustomerSay />
 		</section>
 	);
 };

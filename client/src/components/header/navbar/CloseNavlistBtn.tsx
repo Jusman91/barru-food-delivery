@@ -1,4 +1,4 @@
-import { ButtonIcon } from '@/components/fragments';
+import { Button } from '@/components/elements';
 import { ICloseNavlistBtnProps } from '@/types';
 import { IoCloseCircleOutline } from 'react-icons/io5';
 
@@ -6,12 +6,11 @@ const CloseNavlistBtn = ({
 	onClick,
 }: ICloseNavlistBtnProps) => {
 	return (
-		<ButtonIcon
+		<Button
+			type='link'
 			shape='circle'
-			className='md:hidden absolute z-50 top-1 right-4 p-0 border-none'
-			icon={
-				<IoCloseCircleOutline className='text-2xl text-primary-40 hover:text-primary-20' />
-			}
+			className='md:hidden absolute z-50 top-1 right-4'
+			icon={<IoCloseCircleOutline className='text-3xl' />}
 			onClick={onClick}
 		/>
 	);

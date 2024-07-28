@@ -1,7 +1,5 @@
-export interface ISelectOptions {
-	value: string;
-	label: string;
-}
+import { ReactNode } from 'react';
+
 export interface IMenu {
 	name: string;
 	description: string;
@@ -11,8 +9,16 @@ export interface IMenu {
 	status: number;
 	restaurant_id: string;
 }
-export interface ICardMenuProps extends IMenu {}
+export interface ICarouselBtnProps {
+	icon: ReactNode;
+	onClick: () => void;
+}
+export interface ICardCarouselMenuProps extends IMenu {}
 export interface IOrderBtnProps {
 	onClick: () => void;
 }
 export interface IInfoBtnProps extends IOrderBtnProps {}
+export interface ISelectOptions {
+	value: string;
+	label: string;
+}

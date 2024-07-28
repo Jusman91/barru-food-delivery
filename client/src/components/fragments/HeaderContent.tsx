@@ -15,7 +15,7 @@ const HeaderContent = ({
 			<h1 className='uppercase text-clamp-h6 leading-7 text-primary-40'>
 				{title}
 			</h1>
-			<h1 className='text-clamp-h2 leading-tight max-w-[532px] text-wrap'>
+			<h1 className='text-clamp-h2 leading-tight text-wrap'>
 				{subTitle}
 			</h1>
 		</div>

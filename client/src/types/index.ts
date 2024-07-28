@@ -28,10 +28,6 @@ export interface IThemeContext {
 	myTheme: string;
 	toggleMyTheme: () => void;
 }
-export interface IconProps {
-	className?: string;
-	children: ReactNode;
-}
 export interface IImageProps
 	extends ImgHTMLAttributes<HTMLImageElement> {
 	src: string;
@@ -74,4 +70,13 @@ export interface ICloseNavlistBtnProps
 export interface ILoginBtn {
 	onClick: () => void;
 	className?: string;
+}
+
+export interface IListItemsFooter {
+	label: string;
+	path: string;
+}
+export interface IListItemsFooterProps {
+	data: IListItemsFooter[];
+	title: string;
 }

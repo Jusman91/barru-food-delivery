@@ -2,9 +2,9 @@ import { hslaColors } from './src/lib/utils';
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-	corePlugins: {
-		preflight: false,
-	},
+	// corePlugins: {
+	// 	preflight: false,
+	// },
 	theme: {
 		extend: {
 			fontFamily: {
