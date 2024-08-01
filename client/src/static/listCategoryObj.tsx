@@ -20,7 +20,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_FISH}
 				alt='Category Fish'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -31,7 +31,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_SHRIMP}
 				alt='Category Shrimp'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -42,7 +42,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_SQUID}
 				alt='Category Squid'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -53,7 +53,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_CRAB}
 				alt='Category Crab'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -64,7 +64,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_LOBSTER}
 				alt='Category Lobster'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -75,7 +75,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_CUTTLEFISH}
 				alt='Category Cuttlefish'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -86,7 +86,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_OCTOPUS}
 				alt='Category Octopus'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -97,7 +97,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_OYSTER}
 				alt='Category Oyster'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},
@@ -108,7 +108,7 @@ export const listCategoryObj: IlistItem[] = [
 			<Image
 				src={CATEGORY_SEAGRAPES}
 				alt='Category Seagrapes'
-				className='w-8 h-8 object-cover rounded-full'
+				className='w-8 h-8 rounded-full'
 			/>
 		),
 	},

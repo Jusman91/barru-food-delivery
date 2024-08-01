@@ -21,9 +21,6 @@ export const themeToken = (myTheme: string) => {
 				itemBorderRadius: 30,
 				// colorBgContainer: undefined,
 			},
-			// Layout: {
-			// 	siderBg: undefined,
-			// },
 		},
 		algorithm:
 			myTheme === 'dark' ? darkAlgorithm : defaultAlgorithm,

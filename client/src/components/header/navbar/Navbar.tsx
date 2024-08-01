@@ -11,7 +11,7 @@ const Navbar = () => {
 	const [open, setOpen] = useToggle(false);
 
 	return (
-		<section className='sticky top-0 flex justify-between items-center gap-8 px-6 lg:px-[70px] z-[999] shadow-md'>
+		<section className='sticky top-0 flex justify-between items-center gap-8 px-6 lg:px-12 z-[999] shadow-md'>
 			<Logo />
 			<div
 				className={cn(

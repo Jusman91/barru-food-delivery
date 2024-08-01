@@ -1,3 +1,4 @@
+import { MenuProps } from 'antd';
 import { ReactNode } from 'react';
 
 export interface IMenu {
@@ -8,6 +9,9 @@ export interface IMenu {
 	thumbnail: string;
 	status: number;
 	restaurant_id: string;
+}
+export interface IMenuListProps {
+	data: IMenu[];
 }
 export interface ICarouselBtnProps {
 	icon: ReactNode;
@@ -21,4 +25,12 @@ export interface IInfoBtnProps extends IOrderBtnProps {}
 export interface ISelectOptions {
 	value: string;
 	label: string;
+}
+export interface ICategoryInHomeProps {
+	onClick: MenuProps['onClick'] | (() => void);
+	selectedKeys: string[];
+}
+export interface IMenuCategoryProps {
+	selectedCategory: string;
+	setSelectedCategory: (category: string) => void;
 }

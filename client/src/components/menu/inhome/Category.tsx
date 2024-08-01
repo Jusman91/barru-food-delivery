@@ -1,17 +1,19 @@
 import { getListCategoryItems } from '@/lib/utils/getListCategoryItems';
-import { Menu, MenuProps } from 'antd';
+import { ICategoryInHomeProps } from '@/types';
+import { Menu } from 'antd';
 
-const Category = () => {
+const Category = ({
+	onClick,
+	selectedKeys,
+}: ICategoryInHomeProps) => {
 	const { items } = getListCategoryItems();
-	const onClick: MenuProps['onClick'] = (e) => {
-		console.log(e.key);
-	};
+
 	return (
 		<Menu
-			className='w-full !bg-inherit text-md font-merienda font-semibold flex flex-col gap-12'
+			className='w-full !bg-inherit text-md font-semibold flex flex-col gap-12'
 			mode='vertical'
 			items={items}
-			selectedKeys={['ikan']}
+			selectedKeys={selectedKeys}
 			onClick={onClick}
 		/>
 	);

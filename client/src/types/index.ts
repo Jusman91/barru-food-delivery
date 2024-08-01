@@ -2,6 +2,8 @@ import { ImgHTMLAttributes, ReactNode } from 'react';
 export * from './user';
 export * from './menu';
 export * from './restaurant';
+export * from './store';
+
 export enum keys {
 	THEME_STORAGE = 'theme_storage',
 	ACCESSTOKEN_STORAGE = 'accessToken_storage',
@@ -18,8 +20,15 @@ export enum keys {
 	CATEGORIES = 'categories',
 	PROFILE = 'profile',
 	SELECTED_KEYS = 'selected_keys',
+	SELECTED_CATEGORY_KEYS = 'selected_category_keys',
 }
 
+export interface IHeroProps {
+	name: 'home' | 'menus' | 'restaurants' | 'drivers';
+	img: string;
+	textTop: string;
+	textBottom: string;
+}
 export interface IErrorUseContext {
 	context: unknown;
 	message: string;
@@ -28,6 +37,7 @@ export interface IThemeContext {
 	myTheme: string;
 	toggleMyTheme: () => void;
 }
+export type ModalType = 'menu';
 export interface IImageProps
 	extends ImgHTMLAttributes<HTMLImageElement> {
 	src: string;
