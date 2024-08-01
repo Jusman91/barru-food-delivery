@@ -4,7 +4,7 @@ import { HeaderContent } from './fragments';
 
 const ServiceBanner = () => {
 	return (
-		<section className='w-full h-full px-6 lg:px-[70px] pb-16 md:pb-32 flex flex-col items-center gap-16'>
+		<section className='w-full h-full px-6 lg:px-12  py-16 md:py-32 flex flex-col items-center gap-16'>
 			<HeaderContent
 				title='apa yang kami layani'
 				subTitle='Mitra Pengiriman Makanan Favorit Anda'

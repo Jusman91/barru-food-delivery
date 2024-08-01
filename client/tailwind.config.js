@@ -8,7 +8,6 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				merienda: ['Merienda', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
 			},
 			fontSize: {

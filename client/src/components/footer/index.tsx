@@ -7,7 +7,7 @@ import Subscribe from './Subscribe';
 const Footer = () => {
 	return (
 		<footer className='bg-primary-0'>
-			<div className='p-6 md:px-[70px] w-full h-fit flex flex-wrap gap-4 lg:justify-evenly'>
+			<div className='p-6 lg:px-12 w-full h-fit flex flex-wrap gap-4 lg:justify-evenly'>
 				<div className='flex-1 flex flex-col lg:justify-center gap-4'>
 					<Logo />
 					<p className='text-xs md:text-base max-w-[300px]'>

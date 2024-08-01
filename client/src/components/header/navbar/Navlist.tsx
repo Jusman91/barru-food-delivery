@@ -1,5 +1,4 @@
 import { useBreakpoints } from '@/hooks';
-import { getMenuModeAntd } from '@/lib/utils';
 import { getListNavItems } from '@/lib/utils/getListNavItems';
 import {
 	getSelectedKeysInStorage,
@@ -11,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 const Navlist = () => {
 	const navigate = useNavigate();
 	const { md } = useBreakpoints();
-	const mode = getMenuModeAntd(md);
 	const { items } = getListNavItems();
 	const selectedKeys = getSelectedKeysInStorage();
 	const handleNavigate: MenuProps['onClick'] = (e) => {
@@ -22,8 +20,8 @@ const Navlist = () => {
 
 	return (
 		<Menu
-			className='!bg-inherit font-merienda font-bold py-8 md:py-0'
-			mode={mode}
+			className='!bg-inherit font-bold py-8 md:py-0'
+			mode={md !== false ? 'horizontal' : 'vertical'}
 			items={items}
 			selectedKeys={selectedKeys}
 			onClick={handleNavigate}
