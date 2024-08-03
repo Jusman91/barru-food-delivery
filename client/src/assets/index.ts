@@ -1,9 +1,13 @@
 export * from './img/category';
 export * from './img/food';
+export * from './img/restaurant';
 export { default as LOGO } from './img/logo-tasi.png';
 export { default as HEROHOME } from './img/hero_home.jpg';
 export { default as HERO_MENU } from './img/hero_menu.jpg';
+export { default as HERO_RESTAURANT } from './img/hero_restaurant.jpg';
+export { default as HERO_DRIVER } from './img/hero_driver.jpg';
 export { default as DELIVERY } from './img/delivery.svg';
 export { default as ORDER } from './img/order.svg';
 export { default as QUALIY } from './img/quality.svg';
 export { default as CHEF } from './img/chef.png';
+export { default as CHEF_HAT } from './img/chef_hat.svg';

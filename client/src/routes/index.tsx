@@ -9,7 +9,6 @@ import {
 	About,
 	Contact,
 	DetailDriver,
-	DetailMenu,
 	DetailRestaurant,
 	DetailUser,
 	Drivers,
@@ -81,10 +80,6 @@ const Routes = () => {
 							path: '',
 							element: <Menus />,
 						},
-						{
-							path: ':id/detail',
-							element: <DetailMenu />,
-						},
 					],
 				},
 				{
@@ -96,7 +91,7 @@ const Routes = () => {
 							element: <Restaurants />,
 						},
 						{
-							path: ':id/detail',
+							path: ':id',
 							element: <DetailRestaurant />,
 						},
 					],

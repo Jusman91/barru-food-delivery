@@ -11,7 +11,6 @@ export { default as DetailUser } from './user/DetailUser';
 export { default as Restaurants } from './restaurant/Restaurants';
 export { default as DetailRestaurant } from './restaurant/DetailRestaurant';
 export { default as Menus } from './menu/Menus';
-export { default as DetailMenu } from './menu/DetailMenu';
 export { default as Drivers } from './driver/Drivers';
 export { default as DetailDriver } from './driver/DetailDriver';
 export { default as NotFound } from './404';
