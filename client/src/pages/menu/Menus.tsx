@@ -17,8 +17,8 @@ const Menus = () => {
 			<Hero
 				name='menus'
 				img={HERO_MENU}
-				textTop='Fast & Fresh'
-				textBottom='Find Your Menu'
+				textTop='Cepat & Segar'
+				textBottom='Dapatkan'
 			/>
 			<div className='py-8 px-6 md:px-12'>
 				<SearchMenu />

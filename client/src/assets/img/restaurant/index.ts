@@ -1,0 +1,15 @@
+export { default as BAKSO_SEAFOOD_MALANG } from './bakso_seafood_malang.jpg';
+export { default as CAFE_LAUT_INDAH } from './cafe_laut_indah.jpg';
+export { default as GADO2_SEAFOOD_BU_RINI } from './gado2_seafood_bu_rini.jpg';
+export { default as KEDAI_IKAN_BAKAR_ACEH } from './kedai_ikan_bakar_aceh.jpg';
+export { default as LESEHAN_IKAN_LALAPAN } from './lesehan_ikan_lalapan.jpg';
+export { default as MANG_OYO } from './mang_oyo.jpg';
+export { default as NY_KAMTO } from './ny_kamto.jpg';
+export { default as PONDOK_UDANG_BAKAR } from './pondok_udang_bakar.jpg';
+export { default as RUMAH_MAKAN_NUSANTARA } from './rumah-makan-nusantara.jpg';
+export { default as RUMAH_MAKAN_HJ_DONI } from './rumah_makan_hj.doni.jpg';
+export { default as RUMAH_MAKAN_PAK_GENDUT } from './rumah_makan_pak_gendut.jpg';
+export { default as RUMAH_MAKAN_MAK_SYUKUR } from './sate_cumi_mak_syukur.jpeg';
+export { default as SEAFOOD_BARRU } from './seafood_barru.jpeg';
+export { default as SEAFOOD_NUSANTARA } from './seafood_nusantara.jpg';
+export { default as RUMAH_MAKAN_BETAWI } from './soto_ikan_betawi.jpeg';

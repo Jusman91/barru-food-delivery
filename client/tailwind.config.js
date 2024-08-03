@@ -34,9 +34,21 @@ export default {
 				'glass-inset':
 					'inset 0 17px 5px -9px rgba(164, 143, 255, 0.05)',
 				'glass-sm': '5px 5px 10px 0 rgba(21,31,71,1)',
+				light:
+					'0 0 15px #fff, 0 0 50px #fff, 0 0 100px #fff, 0 0 200px #fff, 0 0 300px #fff',
 			},
 			backgroundColor: {
 				glass: 'rgba(255,255,255,0.1)',
+			},
+			keyframes: {
+				'border-spin': {
+					'100%': {
+						transform: 'rotate(-360deg)',
+					},
+				},
+			},
+			animation: {
+				'border-spin': 'border-spin 7s linear infinite',
 			},
 		},
 	},
