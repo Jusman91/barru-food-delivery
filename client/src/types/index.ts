@@ -25,7 +25,13 @@ export enum keys {
 }
 
 export interface IHeroProps {
-	name: 'home' | 'menus' | 'restaurants' | 'drivers';
+	name:
+		| 'home'
+		| 'menus'
+		| 'restaurants'
+		| 'drivers'
+		| 'about'
+		| 'contact';
 	img: string;
 	textTop: string;
 	textBottom: string;
