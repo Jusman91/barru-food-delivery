@@ -29,11 +29,14 @@ export default {
 				...hslaColors('primary'),
 			},
 			boxShadow: {
-				elements:
-					'-5px -5px 15px rgba(164, 143, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.35)',
+				center: '0 0 20px 2px rgba(0, 0, 0, .4)',
 				'glass-inset':
 					'inset 0 17px 5px -9px rgba(164, 143, 255, 0.05)',
 				'glass-sm': '5px 5px 10px 0 rgba(21,31,71,1)',
+				'inset-left':
+					'inset -7px 0 30px -7px rgba(0, 0, 0, .4)',
+				'inset-right':
+					'inset 7px 0 30px -7px rgba(0, 0, 0, .4)',
 				light:
 					'0 0 15px #fff, 0 0 50px #fff, 0 0 100px #fff, 0 0 200px #fff, 0 0 300px #fff',
 			},

@@ -24,6 +24,10 @@ const driverSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		subdistrict: {
+			type: String,
+			required: true,
+		},
 		address: {
 			type: String,
 			required: true,
@@ -32,10 +36,6 @@ const driverSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 			unique: true,
-		},
-		vehicle: {
-			type: String,
-			required: true,
 		},
 		status: {
 			type: Number,

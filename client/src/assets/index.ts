@@ -1,6 +1,7 @@
 export * from './img/category';
 export * from './img/food';
 export * from './img/restaurant';
+export * from './img/driver';
 export { default as LOGO } from './img/logo-tasi.png';
 export { default as HEROHOME } from './img/hero_home.jpg';
 export { default as HERO_MENU } from './img/hero_menu.jpg';

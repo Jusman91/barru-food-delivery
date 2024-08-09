@@ -104,13 +104,17 @@
 	}
 }
 
-/* #restaurant-name:before {
-	content: attr(data-text);
-	position: absolute;
-	top: 30px;
-	left: -20px;
-	color: rgba(0, 0, 0, 0.3);
-	text-shadow: none;
-	filter: blur(8px);
-	z-index: -1;
-} */
+.trapezoid-bg {
+	clip-path: polygon(0 0, 85% 0, 31% 100%, 0 100%);
+}
+.trapezoid-side {
+	clip-path: polygon(0 0, 90% 0, 32% 100%, 0 100%);
+}
+.trapezoid-side:hover {
+	width: 100%;
+	clip-path: unset;
+}
+
+.user-profile .ant-modal-close {
+	display: none;
+}

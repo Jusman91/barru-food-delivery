@@ -8,7 +8,6 @@ import {
 import {
 	About,
 	Contact,
-	DetailDriver,
 	DetailRestaurant,
 	DetailUser,
 	Drivers,
@@ -103,10 +102,6 @@ const Routes = () => {
 						{
 							path: '',
 							element: <Drivers />,
-						},
-						{
-							path: ':id/detail',
-							element: <DetailDriver />,
 						},
 					],
 				},
