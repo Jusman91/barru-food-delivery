@@ -1,9 +1,4 @@
-import { Link } from 'react-router-dom';
-import {
-	BiLogoFacebookCircle,
-	BiLogoInstagramAlt,
-	BiLogoTwitter,
-} from 'react-icons/bi';
+import Medsos from '../fragments/Medsos';
 
 const FollowUs = () => {
 	return (
@@ -11,17 +6,13 @@ const FollowUs = () => {
 			<h6 className='text-sm lg:text-xl font-semibold leading-7'>
 				Follow us
 			</h6>
-			<div className='flex items-center gap-4'>
-				<Link to={'/'}>
-					<BiLogoInstagramAlt className='w-7 h-7' />
-				</Link>
-				<Link to={'/'}>
-					<BiLogoFacebookCircle className='w-7 h-7' />
-				</Link>
-				<Link to={'/'}>
-					<BiLogoTwitter className='w-7 h-7' />
-				</Link>
-			</div>
+			<Medsos
+				pathInstagram='/'
+				pathFacebook='https://www.linkedin.com/in/jusman-jaharudding-a18a78254/'
+				pathTiktok='/'
+				pathTwitter='/'
+				pathYoutube='/'
+			/>
 		</>
 	);
 };

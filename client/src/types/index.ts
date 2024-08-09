@@ -2,6 +2,7 @@ import { ImgHTMLAttributes, ReactNode } from 'react';
 export * from './user';
 export * from './menu';
 export * from './restaurant';
+export * from './driver';
 export * from './store';
 
 export enum keys {
@@ -37,7 +38,7 @@ export interface IThemeContext {
 	myTheme: string;
 	toggleMyTheme: () => void;
 }
-export type ModalType = 'menu';
+export type ModalType = 'menu' | 'driver';
 export interface IImageProps
 	extends ImgHTMLAttributes<HTMLImageElement> {
 	src: string;

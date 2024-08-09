@@ -9,3 +9,4 @@ export { default as CustomerSay } from './CustomerSay';
 export { default as MenuInHome } from './menu/inhome/MenuInHome';
 export { default as MenuList } from './menu/MenuList';
 export { default as SearchMenu } from './menu/SearchMenu';
+export { default as Medsos } from './fragments/Medsos';
