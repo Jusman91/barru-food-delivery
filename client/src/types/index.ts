@@ -24,6 +24,10 @@ export enum keys {
 	SELECTED_CATEGORY_KEYS = 'selected_category_keys',
 }
 
+export interface ILabel {
+	label: string;
+	className?: string;
+}
 export interface IHeroProps {
 	name:
 		| 'home'

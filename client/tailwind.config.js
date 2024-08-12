@@ -43,6 +43,10 @@ export default {
 			backgroundColor: {
 				glass: 'rgba(255,255,255,0.1)',
 			},
+			backgroundImage: {
+				'background-contact':
+					"url('/src/assets/img/contact_bg.jpeg')",
+			},
 			keyframes: {
 				'border-spin': {
 					'100%': {
