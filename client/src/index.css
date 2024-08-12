@@ -118,3 +118,6 @@
 .user-profile .ant-modal-close {
 	display: none;
 }
+.contact-input .ant-input::placeholder {
+	color: white !important;
+}
